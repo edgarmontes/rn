@@ -4,24 +4,3 @@ import Main from "./components/MainComponent";
 export default function App() {
   return <Main />;
 }
-/*
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>HELLO WORLD !!!</Text>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#bdc3c7" //,
-    //alignItems: "center",
-    //justifyContent: "center"
-  }
-});
-*/
