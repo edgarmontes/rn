@@ -2,13 +2,17 @@ import React, { Component } from "react";
 import Home from "./HomeComponent";
 import Directory from "./DirectoryComponent";
 import CampsiteInfo from "./CampsiteInfoComponent";
+import AboutUs from "./AboutComponent";
+import ContactUs from "./ContactComponent";
 import { View, Platform } from "react-native";
 import { createStackNavigator, createDrawerNavigator } from "react-navigation";
 
 const DirectoryNavigator = createStackNavigator(
   {
     Directory: { screen: Directory },
-    CampsiteInfo: { screen: CampsiteInfo }
+    CampsiteInfo: { screen: CampsiteInfo },
+    AboutUs: { screen: AboutUs },
+    ContactUs: { screen: ContactUs }
   },
   {
     initialRouteName: "Directory",
@@ -41,10 +45,46 @@ const HomeNavigator = createStackNavigator(
   }
 );
 
+const ContactNavigator = createStackNavigator(
+  {
+    ContactUs: { screen: ContactUs }
+  },
+  {
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: "#5637DD"
+      },
+      headerTintColor: "#fff",
+      headerTitleStyle: {
+        color: "#fff"
+      }
+    }
+  }
+);
+
+const AboutNavigator = createStackNavigator(
+  {
+    AboutUs: { screen: AboutUs }
+  },
+  {
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: "#5637DD"
+      },
+      headerTintColor: "#fff",
+      headerTitleStyle: {
+        color: "#fff"
+      }
+    }
+  }
+);
+
 const MainNavigator = createDrawerNavigator(
   {
     Home: { screen: HomeNavigator },
-    Directory: { screen: DirectoryNavigator }
+    Directory: { screen: DirectoryNavigator },
+    AboutUs: { screen: AboutNavigator },
+    ContactUs: { screen: ContactNavigator }
   },
   {
     drawerBackgroundColor: "#CEC8FF"
