@@ -10,9 +10,7 @@ import { createStackNavigator, createDrawerNavigator } from "react-navigation";
 const DirectoryNavigator = createStackNavigator(
   {
     Directory: { screen: Directory },
-    CampsiteInfo: { screen: CampsiteInfo },
-    AboutUs: { screen: AboutUs },
-    ContactUs: { screen: ContactUs }
+    CampsiteInfo: { screen: CampsiteInfo }
   },
   {
     initialRouteName: "Directory",
