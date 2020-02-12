@@ -20,7 +20,7 @@ function RenderCampsite(props) {
         featuredTitle={campsite.name}
         image={{ uri: baseUrl + campsite.image }}
       >
-        ><Text style={{ margin: 10 }}>{campsite.description}</Text>
+        <Text style={{ margin: 10 }}>{campsite.description}</Text>
         <Icon
           name={props.favorite ? "heart" : "heart-o"}
           type="font-awesome"
